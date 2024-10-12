@@ -1,0 +1,93 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import '@ionic/angular/css/palettes/dark.system.css';
+
+.avatar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Alinea a la izquierda */
+    align-items: center; /* Centra verticalmente */
+    overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+    padding: 30px; /* Espaciado opcional */
+  }
+  
+  ion-avatar {
+    width: 100px; /* Cambia el tamaño según lo desees */
+    height: 100px; /* Cambia el tamaño según lo desees */
+    overflow: hidden; /* Para evitar que la imagen se salga del contenedor */
+    margin-right: 50px; /* Espaciado entre avatares */
+  }
+
+  .avatar-text-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  ion-avatar {
+    margin-right: 50px; /* Espacio entre el avatar y el texto */
+    padding: 2px;
+    border: 2px solid var(--ion-color-danger);
+  }
+  
+  .text-content {
+    font-size: 14px; /* Tamaño de fuente para el texto */
+    color: #000; /* Color del texto */
+  }
+  
+  .heart-button {
+    .heart-button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #ec0707ed; /* Fondo rojo transparente para verificar */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+    }
+    
+}
+
+.heart-button ion-icon {
+  font-size: 24px; /* Tamaño del ícono */
+  color: red; /* Color del corazón */
+}
+
+
+
+
+  
